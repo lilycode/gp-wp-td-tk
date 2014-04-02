@@ -1,0 +1,38 @@
+{
+  "name": "grunted",
+  "version": "1.0.0",
+  "description": "Grunt powered Wordpress Theme Development Toolkit (GpWPTDTk™)",
+  "textDomain": "grunted",
+  "main": "app.js",
+  "tags": [
+    "wordpress",
+    "theme",
+    "development",
+    "toolkit",
+    "node",
+    "grunt",
+    "awesome"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Jan Lindblom",
+    "email": "jan@janlindblom.se",
+    "uri": "http://www.janlindblom.se"
+  },
+  "license": "BSD",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*",
+    "bower": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-compress": "*",
+    "grunt-contrib-compass": "*",
+    "grunt-contrib-rename": "*"
+  }
+}
