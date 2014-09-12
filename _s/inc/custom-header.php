@@ -7,7 +7,7 @@
 
 	<?php if ( get_header_image() ) : ?>
 	<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-		<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
+		<img src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" height="<?php echo esc_attr( get_custom_header()->height ); ?>" alt="">
 	</a>
 	<?php endif; // End header image check. ?>
 
@@ -16,13 +16,11 @@
  */
 
 /**
- * Setup the WordPress core custom header feature.
+ * Set up the WordPress core custom header feature.
  *
  * @uses grunted_header_style()
  * @uses grunted_admin_header_style()
  * @uses grunted_admin_header_image()
- *
- * @package grunted
  */
 function grunted_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'grunted_custom_header_args', array(
